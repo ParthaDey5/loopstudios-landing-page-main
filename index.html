@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./scss/style.css">
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      
+      .alata {
+        font-family: "Alata", sans-serif;
+        font-style: normal;
+      }
+
+      .josefin-sans {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      } 
+      
+    </style>
+  </head>
+  <body
+    class="page flex flex-col items-center justify-start lg:aspect-[1440/2896] aspect-[750/6434]"
+  >
+    
+    <header class="page__header">
+      <nav class="page__nav nav">
+        <img src="./images/logo.svg" alt="logo" class="nav__logo logo" srcset="">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Careers</a></li>
+          <li class="nav__item"><a class="nav__link" href="" >Events</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Products</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Support</a></li>
+        </ul>
+        <img src="./images/icon-hamburger.svg" class="nav__toggle lg:hidden block cursor-pointer w-25" alt="icon-hamburger" srcset="" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+      </nav>
+        <section id="mobile-menu" class="nav__mobile hidden z-[999]">
+          <div class="nav__mobile-header flex items-center justify-between">
+            <img src="./images/logo.svg" alt="logo" class="nav__logo logo" srcset="">
+            <img src="./images/icon-close.svg" alt="icon-close" class="nav__close lg:hidden block cursor-pointer w-25" srcset="" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+          </div>
+          <ul class="nav__mobile-list uppercase">
+          <li class="nav__mobile-item"><a href="" class="nav__mobile-link">About</a></li>
+          <li class="nav__mobile-item"><a href="" class="nav__mobile-link">Careers</a></li>
+          <li class="nav__mobile-item"><a href=""  class="nav__mobile-link">Events</a></li>
+          <li class="nav__mobile-item"><a href="" class="nav__mobile-link">Products</a></li>
+          <li class="nav__mobile-item"><a href="" class="nav__mobile-link">Support</a></li>
+        </ul>
+        </section>
+    </header>
+    <img class="w-[100rem] absolute top-0 z-[-3] lg:opacity-100 opacity-0" src="./images/desktop/image-hero.jpg" alt="image-hero" srcset="">
+    <img class="w-[100rem] absolute top-0 z-[-3] lg:opacity-0 opacity-100" src="./images/mobile/image-hero.jpg" alt="image-hero" srcset="">
+    <main class="page__main flex flex-col items-center">
+      <section id="hero" class="hero">
+        <h1 class="hero__title uppercase">
+           Immersive experiences that deliver
+        </h1>
+      </section>
+    </main>
+      <section class="interactive !relative w-full flex lg:flex-row flex-col lg:!py-67 !py-218 lg:!px-45 !px-25">
+        <img class="interactive__image interactive__image--desktop lg:w-205 w-0" src="./images/desktop/image-interactive.jpg" alt="image-interactive" srcset="">
+        <img class="interactive__image interactive__image--mobile lg:w-0 w-full" src="./images/mobile/image-interactive.jpg" alt="image-interactive" srcset="">
+        <div class="interactive__content !absolute lg:left-200 lg:top-119 top-500 z-[5] lg:w-[45rem] w-[87rem] aspect-[10/5.5] bg-white">
+          <h1 class="interactive__heading uppercase josefin-sans font-light lg:w-[32rem] lg:text-[3.4rem] text-[8.5rem] lg:!mt-26 lg:!ml-27 !ml-5 lg:leading-[3.3rem] leading-[9.5rem] lg:tracking-[0.03rem] lg:text-left text-center">
+            The leader in interactive VR 
+          </h1>
+          <p class="interactive__text alata font-medium lg:w-[32rem] w-[79rem] lg:text-[1.1rem] text-[4.2rem] lg:!mt-7 !mt-12 lg:!ml-27 !ml-12 lg:leading-[1.7rem] leading-[6.7rem] lg:-tracking-[0.002rem] lg:text-left text-center">
+Founded in 2011, Loopstudios has been producing
+    world-class virtual reality projects for some of the best companies around
+    the globe. Our award-winning creations have transformed businesses through
+    digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="creations flex flex-col items-center w-full lg:-translate-y-[4rem] translate-y-[50rem]">
+        <div class="creations__header w-full flex lg:justify-between justify-center items-start lg:!px-45">
+          <h1 class="creations__title uppercase josefin-sans font-light lg:w-[32rem] lg:text-[3.4rem] text-[8.5rem] lg:leading-[3.3rem] leading-[9.5rem] lg:tracking-[0.01rem] lg:text-left text-center">Our creations</h1>
+          <button class="creations__button creations__button--desktop  lg:block hidden uppercase outline-1 outline-black alata lg:!py-[0.5rem] lg:!px-[2.2rem] lg:text-[1.1rem] text-[8.5rem] font-bold lg:tracking-[0.4rem] hover:bg-black hover:text-white cursor-pointer">See all</button>
+        </div>
+
+        <div class="creations__grid lg:!mt-22 !mt-50 grid lg:grid-cols-4 grid-cols-1 lg:gap-x-[2.4rem] lg:gap-y-[2rem] gap-y-[7.2rem]">
+          <div class="creations__item creations__item--earth lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-deep-earth.jpg')] bg-[url('./images/mobile/image-deep-earth.jpg')] bg-center bg-cover bg-no-repeat uppercase  lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out">
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div>
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">Deep </br>
+    earth</p></div>
+          <div class="creations__item creations__item--arcade lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-night-arcade.jpg')] bg-[url('./images/mobile/image-night-arcade.jpg')] bg-center bg-cover bg-no-repeat uppercase  lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div>
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">Night </br>arcade</p> 
+          </div>
+          <div class="creations__item creations__item--soccer lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-soccer-team.jpg')] bg-[url('./images/mobile/image-soccer-team.jpg')] bg-center bg-cover bg-no-repeat uppercase  lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div> 
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">Soccer </br>team VR</p>
+          </div>
+          <div class="creations__item creations__item--grid lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-grid.jpg')] bg-[url('./images/mobile/image-grid.jpg')] bg-center bg-cover bg-no-repeat uppercase lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div>
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">The</br> grid</p> 
+          </div>
+          <div class="creations__item creations__item--from lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-from-above.jpg')] bg-[url('./images/mobile/image-from-above.jpg')] bg-center bg-cover bg-no-repeat uppercase lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div> 
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">From up </br> above VR</p>
+          </div>
+          <div class="creations__item creations__item--boreals lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-pocket-borealis.jpg')] bg-[url('./images/mobile/image-pocket-borealis.jpg')] bg-center bg-cover bg-no-repeat uppercase lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div> 
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">Pocket</br>  borealis</p>
+          </div>
+          <div class="creations__item creations__item--curiosity lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-curiosity.jpg')] bg-[url('./images/mobile/image-curiosity.jpg')] bg-center bg-cover bg-no-repeat uppercase lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div> 
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">The</br> curiosity </p>
+          </div>
+          <div class="creations__item creations__item--fisheye lg:w-70 w-[87rem] h-125 lg:bg-[url('./images/desktop/image-fisheye.jpg')] bg-[url('./images/mobile/image-fisheye.jpg')] bg-center bg-cover bg-no-repeat uppercase lg:text-[2.2rem] text-[6.5rem] josefin-sans font-light lg:leading-[2.4rem] leading-[7rem] text-white relative hover:text-black cursor-pointer transition-all ease-in-out"> 
+            <div class="creations__item__overlay absolute inset-0 bg-[hsl(0,0%,85%)] opacity-0 hover:opacity-80"></div> 
+            <p class="absolute lg:bottom-8 bottom-15 lg:left-11 left-20">Make it</br> fisheye</p>
+          </div>
+        </div>
+
+        <button class="creations__button creations__button--mobile lg:hidden !mt-40 uppercase outline-1 outline-black alata !py-[2.5rem] !px-[10rem] text-[3.5rem] font-bold tracking-[1.4rem]">See all</button>
+
+      </section>
+
+      <footer class="page__footer w-full lg:!mt-35 !mt-300 lg:!px-46 lg:!py-12 !py-63 flex lg:flex-row flex-col items-center justify-between gap-y-[9rem] text-white">
+        <div class="footer__nav">
+          <img src="./images/logo.svg" alt="logo" class="footer__logo lg:w-40 w-155" srcset="">
+          <ul class="footer__list lg:!mt-7 !mt-35 flex lg:flex-row flex-col items-center  gap-y-[5rem] gap-x-[2.5rem] lg:text-[1rem] text-[4rem]">
+          <li class="footer__item"><a href="">About</a></li>
+          <li class="footer__item"><a href="">Careers</a></li>
+          <li class="footer__item"><a href="" >Events</a></li>
+          <li class="footer__item"><a href="">Products</a></li>
+          <li class="footer__item"><a href="">Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social flex flex-col lg:items-end lg:gap-y-[2rem] gap-y-[8.5rem]">
+
+        <div class="footer__icons !mt-[3.3rem] lg:!mt-0 flex items-center justify-center gap-x-[4.5rem] lg:gap-x-[1.3rem]">
+          <a href="" class="footer__icon">
+            <img class="lg:w-6 w-25" src="./images/icon-facebook.svg" alt="icon-facebook" srcset="">
+          </a>
+          <a href="" class="footer__icon">
+
+            <img class="lg:w-6 w-25" src="./images/icon-twitter.svg" alt="icon-twitter" srcset="">
+          </a>
+          <a href="" class="footer__icon">
+
+            <img class="lg:w-6 w-25" src="./images/icon-pinterest.svg" alt="icon-pinterest" srcset="">
+          </a>
+          <a href="" class="footer__icon">
+
+            <img class="lg:w-6 w-25" src="./images/icon-instagram.svg" alt="icon-instagram" srcset="">
+          </a>
+        </div>
+        <p class="footer__copy lg:text-[1.05rem] text-[4.1rem] lg:translate-y-0 -translate-y-[3.5rem]">© 2021
+    Loopstudios. All rights reserved.</p>
+
+        </div>
+      </footer>
+             
+  </body>
+</html>

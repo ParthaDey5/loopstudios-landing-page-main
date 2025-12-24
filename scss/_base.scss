@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1vw;
+  overflow-x: hidden; 
+}
+
+body {
+  font-family: $font-alata;
+  font-size: $font-size-body;
+  color: $color-black;
+  background-color: $color-white;
+  line-height: 1.5;
+}

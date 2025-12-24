@@ -1,0 +1,33 @@
+// Media query helper
+@mixin respond($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (min-width: $bp-mobile) { @content; }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: $bp-desktop) { @content; }
+  }
+}
+
+// Flex center utility
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Fluid size utility
+@mixin fluid-size($min, $prefered, $max) {
+  width: clamp($min, $prefered, $max);
+}
+
+@mixin pad($top: 0, $right: $top, $bottom: $top, $left: $right) {
+  padding: $top $right $bottom $left  !important;
+}
+@mixin margin($top: 0, $right: $top, $bottom: $top, $left: $right) {
+  margin: $top $right $bottom $left  !important;
+}

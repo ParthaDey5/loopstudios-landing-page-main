@@ -1,0 +1,12 @@
+.header {
+  @include flex-center;
+  padding: 1rem;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+  background-color: $color-grey-200;
+}
