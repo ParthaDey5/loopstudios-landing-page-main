@@ -32,10 +32,10 @@ Users should be able to:
 ### Screenshot
 
 - **Desktop preview:**  
-  ![](./images/screenshots/desktop.png)
+  ![](./desktop.png)
 
 - **Mobile preview:**  
-  ![](./images/screenshots/mobile.png)
+  ![](./mobile.png)
 
 ### Links
 
