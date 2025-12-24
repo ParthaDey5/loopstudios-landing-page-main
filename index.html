@@ -67,8 +67,13 @@
         </ul>
         </section>
     </header>
-    <img class="w-[100rem] absolute top-0 z-[-3] lg:opacity-100 opacity-0" src="./images/desktop/image-hero.jpg" alt="image-hero" srcset="">
-    <img class="w-[100rem] absolute top-0 z-[-3] lg:opacity-0 opacity-100" src="./images/mobile/image-hero.jpg" alt="image-hero" srcset="">
+    <div class="absolute top-0 z-[-3]  lg:opacity-100 opacity-0">
+      <div class="absolute inset-0 bg-black/35"></div>
+      <img class="w-[100rem]" src="./images/desktop/image-hero.jpg" alt="image-hero" srcset="">
+    </div>
+<div class="absolute top-0 z-[-3] lg:opacity-0 opacity-100">
+  <img class="w-[100rem]" src="./images/mobile/image-hero.jpg" alt="image-hero" srcset="">
+</div>
     <main class="page__main flex flex-col items-center">
       <section id="hero" class="hero">
         <h1 class="hero__title uppercase">
